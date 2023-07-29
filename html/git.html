@@ -13,23 +13,18 @@
         команды Git, которые могут стать вашими постоянными спутниками в разработке.
     </p>
     <p>
-        1. <b class="red" style="color:red">git init</b>
+        1. <b class="red" style="color:red;">git init</b>
     </p>
     <p>
-        Эта команда используется для клонирования проекта как репозитория git.
+        Эта команда создание нового репозитория Git в пустой директории
+    </p>
+    <br>
+    <p>
+        2. <b class="red" style="color:red;">git clone
+        <url></b>
     </p>
     <p>
-        <br>
-    </p>
-    <p>
-        2. <b class="red" style="color:red">git clone
-        <url>
-            <directory></directory>
-        </url>
-    </b>
-    </p>
-    <p>
-        Эта команда клонирует репозиторий в новую директорию.&nbsp;
+        Эта команда клонирование репозитория из удаленного хранилища на локальную машину
     </p>
     <p>
         <code> git config</code> — это удобная функция, которая используется для настройки значений конфигурации Git на
@@ -42,86 +37,64 @@
         <code>git config --local user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
     </p>
     <p>
-        <code> &nbsp;git config --global user.name "Name"</code>
+        <code> git clone https://github.com/AlexSkrTh/hw4_git.git</code>
     </p>
     <p>
-        <code> &nbsp;git config --global user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
-    </p>
-    <br>
-    <p>
-        Если надо скопировать только файлы:
-    </p>
-    <p>
-        <code> git clone --depth=1 git://someserver/somerepo dirformynewrepo </code>
-    </p>
-    <code> </code>
-    <p>
-        <code>
-            rm -rf !$/.git</code>
-    </p>
-    <p>
-        <br>
-    </p>
-    <p>
-        3. <b class="red" style="color:red">git remote add
-        <repository>
-            <url></url>
-        </repository>
-    </b>
-    </p>
-    <p>
-        Пример: <code>git remote add origin <a
-            href="https://github.com/MrKrishnaAgarwal/Git-CheatSheet.git?roistat_visit=2927050">https://github.com/MrKrishnaAgarwal/Git-CheatSheet.git</a></code>
-    </p>
-    <p>
-        Эта команда используется для добавления или подключения к удаленному репозиторию.
+        клонирование репозитория из удаленного хранилища на локальную машину
     </p>
     <br>
     <p>
-        4. <b class="red" style="color:red">git remote -v</b>
+        3. <b class="red" style="color:red";>git remote add
+        origin <url></b>
     </p>
     <p>
-        Эта команда используется для просмотра подключенных удаленных репозиториев.
+        <code>git remote add origin 
+            <a href="https://github.com/MrKrishnaAgarwal/Git-CheatSheet.git?roistat_visit=2927050">https://github.com/MrKrishnaAgarwal/Git-CheatSheet.git</a></code>
+    </code>
+    </p>
+    <p>
+        Эта команда  добавляет связь с удаленным репозиторием.
     </p>
     <br>
     <p>
-        5. <b class="red" style="color:red">git statuses</b>
+        4. <b class="red" style="color:red;">git remote -v</b>
     </p>
     <p>
-        Эта команда используется для просмотра статуса файлов в вашем локальном репозитории. Отслеживаются ли файлы? Не
-        отслеживается? Изменены ли они?
+        Эта команда отображает список удаленных репозиториев, связанных с локальным
+    </p>
+    <br>
+    <p>
+        5. <b class="red" style="color:red;">git status</b>
+    </p>
+    <p>
+        Эта команда выводит список файлов из рабочей директории, которые были добавлены, удалены или изменены по сравнению с последним коммитом в локальном репозитории
     </p>
     <br>
     <p>
         6. <b class="red" style="color:red">git add </b>
     </p>
-    <b> </b>
+    <p> 
+       Эта команда добавляет файлы из рабочей директории в индекс локального репозитория 
+    </p>
     <p>
         Пример:<code> git add index.html</code>
     </p>
     <p>
-        <code>git add index.html style.css </code>style.scss
+        Эта команда для добавления всех файлов)
     </p>
     <p>
-        Эта команда переносит все старые и измененные файлы в раздел добавленных файлов
-    </p>
-    <p>
-        <code> git add -A</code>
-    </p>
-    <p>
-        -
+        <code> git add -all</code>
     </p>
     <p>
         <code>git add
-            <filename></filename>
-        </code>
+            <filename></code>
     </p>
     <p>
-        для конкретного файла
+        Эта команда для добавления конкретного файла
     </p>
     <br>
     <p>
-        7.<b class="red" style="color:red"> git reset</b>
+        7.<b class="red" style="color:red;"> git reset</b>
     </p>
     <p>
         Эта команда используется для мягкой или жёсткой отмены изменений, позволяет сбросить состояние проекта до
