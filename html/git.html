@@ -80,7 +80,7 @@
         Пример:<code> git add index.html</code>
     </p>
     <p>
-        Эта команда для добавления всех файлов)
+        Эта команда для добавления всех файлов
     </p>
     <p>
         <code> git add -all</code>
@@ -101,26 +101,26 @@
         нужного коммита. Например.&nbsp;
     </p>
     <p>
-        отмена неотправленного коммита: <code>git reset --hard HEAD^</code>
+      вернуться к коммиту перед HEAD: <code>git reset --hard HEAD^</code>
     </p>
     <p>
-        отмена отправленного коммита ( возврат к состояние коммита 7880ae2 )
+        возврат к состояние коммита 7880ae2
     </p>
     <p>
         <code>git reset --hard f7880ae2 </code>
     </p>
     <p>
-        <code>
-            git push origin -f</code>
+        <code>git push origin -f</code>
     </p>
     <p>
+         эта команда,чтобы принудительно отправить локальную ветку в удаленный репозиторий
+    </p>
         <br>
+    <p>
+        8. <b class="red" style="color:red;">git commit</b>
     </p>
     <p>
-        8. <b class="red" style="color:red">git commit</b>
-    </p>
-    <p>
-        -
+        команда для сохранение изменений в Git
     </p>
     <p>
         <code> git commit -m “Text message”</code>
@@ -136,7 +136,7 @@
     </p>
     <p>
         Команда <code>--amend</code> вносит в предыдущий коммит изменения, которые подготовлены к коммиту. Используется
-        и для редактирования предыдущего commit message, если в нём допущены ошибки.
+        и для редактирования предыдущего commit message, если в нём допущены ошибки
     </p>
     <br>
     <p>
@@ -147,11 +147,7 @@
         соответствующую локальной и связывает их.
     </p>
     <p>
-        <code>git push
-            <repository>
-                <branch></branch>
-            </repository>
-        </code>
+        <code>git push <branch></code>
     </p>
     <p>
         Пример: <code>git push -u origin master</code>
